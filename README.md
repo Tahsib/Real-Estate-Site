@@ -11,11 +11,28 @@ source <environment name>/bin/activate
 ```
 pip3 install -r requirements.txt
 ``` 
+* Create a Postgres DB and add the credentials to ```settings.py```
+```
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'db_name',
+        'USER': 'name',
+        'PASSWORD': '',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
+```
+* Migrate the database
+```
+python3 manage.py migrate
+```
 * Create a superuser
 ```
 python3 manage.py createsuperuser
 ```
-* Make migrations and migrate
+* Make migrations and migrate the database
 ```
 python3 manage.py makemigrations
 python3 manage.py migrate
