@@ -3,23 +3,23 @@ Users can search for property according to their requirements and can send inqui
 
 ## Installing
  * Start a virtual environment
-  ```
-  virtualenv env <environment name>```
-  source <environment name>/bin/activate
-  ```
+```
+virtualenv env <environment name>
+source <environment name>/bin/activate
+```
 * Install all the dependencies
-  ```
-  pip3 install -r requirements.txt
-  ``` 
+```
+pip3 install -r requirements.txt
+``` 
 * Create a superuser
-  ```
-  python3 manage.py createsuperuser
-  ```
+```
+python3 manage.py createsuperuser
+```
 * Make migrations and migrate
 ```
-  python3 manage.py makemigrations
-  python3 manage.py migrate
-  ```
+python3 manage.py makemigrations
+python3 manage.py migrate
+```
 
 ## Running the project
 ```
