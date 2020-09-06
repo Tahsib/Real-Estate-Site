@@ -3,21 +3,27 @@ Users can search for property according to their requirements and can send inqui
 
 ## Installing
 * Start a virtual environment\
-```virtualenv env <environment name>```\
-```source <environment name>/bin/activate```
+```
+virtualenv env <environment name>```
+source <environment name>/bin/activate
+```
 * Install all the dependencies\
 ```pip3 install -r requirements.txt``` (Linux)\
-```pip install -r requirements.txt``` (Windows)
+```pip install -r requirements.txt``` (Windows)\
 * Create a superuser\
 ```python3 manage.py createsuperuser``` (Linux)\
-```python manage.py createsuperuser```(Windows)
+```python manage.py createsuperuser```(Windows)\
 * Make migrations and migrate\
-For Windows:\
-```python manage.py makemigrations```\
-```python manage.py migrate```\
-For Linux:\
-```python3 manage.py makemigrations```\
-```python3 manage.py migrate```
+  For Windows:\
+  ```
+  python manage.py makemigrations
+  python manage.py migrate
+  ```
+  For Linux:\
+  ```
+  python3 manage.py makemigrations
+  python3 manage.py migrate
+  ```
 
 ## Running the project
 ```python3 manage.py runserver``` (Linux)\
