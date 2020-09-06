@@ -15,6 +15,7 @@ def index(request):
         'listings':paged_listings,
         
     }
+    print(context)
 
     return render(request, 'listings/listings.html',context)
 
@@ -24,6 +25,7 @@ def listing(request,listing_id):
     context = {
         'listing':listing
     }
+    print(context)
 
     return render(request, 'listings/listing.html',context)
 
